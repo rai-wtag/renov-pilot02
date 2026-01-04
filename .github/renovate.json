@@ -4,23 +4,12 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
-      "addLabels": ["pilot-team-b"],
       "groupName": "General Updates"
     },
-
     {
-      "matchDepTypes": ["devDependencies"],
-      "enabled": false
-    },
-
-    {
-      "matchUpdateTypes": ["patch"],
-      "automerge": true,
-      "automergeType": "branch-push"
-    },
-
-    {
-      "schedule": ["* 8-19 * * 0-4"]
+      "isVulnerabilityAlert": true,
+      "labels": ["security", "critical"],
+      "prPrefix": "SECURITY: "
     }
   ]
 }
