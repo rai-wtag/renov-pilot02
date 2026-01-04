@@ -1,4 +1,26 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>rai-wtag/renovate-config"]
+  "extends": ["github>rai-wtag/renovate-config"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "addLabels": ["pilot-team-b"],
+      "groupName": "General Updates"
+    },
+
+    {
+      "matchDepTypes": ["devDependencies"],
+      "enabled": false
+    },
+
+    {
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "automergeType": "branch-push"
+    },
+
+    {
+      "schedule": ["* 8-19 * * 0-4"]
+    }
+  ]
 }
