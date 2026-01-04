@@ -1,15 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>rai-wtag/renovate-config"],
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["*"],
-      "groupName": "General Updates"
-    },
-    {
-      "isVulnerabilityAlert": true,
-      "labels": ["security", "critical"],
-      "prPrefix": "SECURITY: "
-    }
-  ]
+  "extends": ["github>rai-wtag/renovate-config"]
 }
