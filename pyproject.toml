@@ -18,7 +18,7 @@ dependencies = [
     # Target: Will group these into ONE PR (scheduled for Sunday).
     "requests==2.25.0",        # Update to ~2.32.x (Minor)
     "marshmallow==3.15.0",      # Update to ~3.21.x (Minor)
-    "cryptography==41.0.0",     # Update to ~42.0.x (Minor)
+    "cryptography==41.0.7",     # Update to ~42.0.x (Minor)
     "idna==3.3",               # Update to ~3.7 (Minor)
     # --- UP-TO-DATE DEPENDENCIES ---
     # Target: Should detect these and ignore them.
